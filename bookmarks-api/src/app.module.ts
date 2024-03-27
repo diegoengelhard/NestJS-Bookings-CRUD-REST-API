@@ -8,6 +8,7 @@ import { PrismaModule } from './prisma/prisma.module';
 
 @Module({
   imports: [
+    // Import the ConfigModule and set it as global
     ConfigModule.forRoot({
       isGlobal: true,
     }),
