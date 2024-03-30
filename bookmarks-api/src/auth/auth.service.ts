@@ -70,7 +70,7 @@ export class AuthService {
           email,
         };
 
-        const secret = this.config.get('JWT_SECRET');
+        const secret = process.env.JWT_SECRET || 'secret';
     
         const token = await this.jwt.signAsync(
           payload,
