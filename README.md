@@ -4,14 +4,13 @@ This repository contains a Dockerized NestJS REST API with Prisma client & Postg
 
 ## Features
 
-- NestJS project setup
-- Auth module including sign up and sign in logic
-- Setting up PostgreSQL in Docker
-- Setting up Prisma with user & bookmark models
-- Automating PostgreSQL restart & Prisma migrations
-- Using Passport.js & JWT module for authentication
+- Use of modules including an auth sign up and sign in logic
+- PostgreSQL in Docker
+- Prisma with user & bookmark models
+- Use of PostgreSQL restart & Prisma migrations
+- Use of Passport.js & JWT module for authentication
 - NestJS Guards for authorization
-- NestJS custom param decorator
+- NestJS custom params decorator
 
 ## Steps to Run the App
 
