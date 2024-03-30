@@ -22,7 +22,7 @@ export class BookmarkService {
         return bookmark;
     }
 
-    // Get a user's bookmarks, params: userId
+    // Get all bookmarks
     getBookmarks(userId: number) {
         return this.prisma.bookmark.findMany({
             where: {
@@ -31,7 +31,7 @@ export class BookmarkService {
         });
     }
 
-    // Get a user's bookmark by id, params: userId, bookmarkId
+    // Get a bookmark by id
     getBookmarkById(userId: number, bookmarkId: number) {
         return this.prisma.bookmark.findFirst({
             where: {
