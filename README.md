@@ -24,6 +24,7 @@ DATABASE_URL="postgresql://username:password@localhost:5434/database-name?schema
 JWT_SECRET="your-secret"
 ```
    Note: For the `DATABASE_URL`, the `username`, `password`, and `database-name` should match the `POSTGRES_USER`, `POSTGRES_PASSWORD`, and `POSTGRES_DB` values declared in the `docker-compose.yml` file respectively.
+   
 3. Run Docker compose:
 ```
 docker-compose up
