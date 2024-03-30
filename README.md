@@ -18,7 +18,13 @@ This repository contains a Dockerized NestJS REST API with Prisma client & Postg
 ```
 git clone https://github.com/diegoengelhard/NestJS-Bookings-CRUD-REST-API.git
 ```
-2. Run Docker compose:
+2. Copy the example environment file and fill in your own values:
+```
+DATABASE_URL="postgresql://username:password@localhost:5434/database-name?schema=public"
+JWT_SECRET="your-secret"
+```
+   Note: For the `DATABASE_URL`, the `username`, `password`, and `database-name` should match the `POSTGRES_USER`, `POSTGRES_PASSWORD`, and `POSTGRES_DB` values declared in the `docker-compose.yml` file respectively.
+3. Run Docker compose:
 ```
 docker-compose up
 ```
